@@ -1,0 +1,17 @@
+uses crt;
+var 
+    total:integer;
+    diskon:real;
+begin
+    clrscr;
+    write('Masukkan harga total belanjaan: '); readln(total); //dalam ribuan
+    if (total >= 1000) then
+        diskon := (0.7 * total)
+    else if (total >= 500) then
+        diskon := (0.8 * total)
+    else if (total >= 100) then
+        diskon := (0.9 * total)
+    else
+        diskon := (total);
+    write('Harga yang harus dibayar adalah: ',diskon:7:0,' ribu rupiah');
+end.
