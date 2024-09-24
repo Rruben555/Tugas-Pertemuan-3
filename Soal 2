@@ -1,0 +1,16 @@
+uses crt;
+var suhu:integer;
+begin
+    clrscr;
+    write('Masukkan suhu(C): ');readln(suhu);
+    if (suhu>35) then
+        writeln('Cuaca sangat panas, hindari sinar matahari langsung!')
+    else if (suhu>26) then
+        writeln('Cuaca hangat, tetap terhidrasi!')
+    else if (suhu>16) then
+        writeln('Cuaca nyaman, cocok untuk jalan-jalan.')
+    else if (suhu>0)then
+        writeln('Cuaca dingin, pakai jaket ya!')
+    else if (suhu<0) then
+       writeln('Cuaca sangat dingin jangan lupa pakai jaket tebal.');
+end.
