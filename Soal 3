@@ -1,0 +1,18 @@
+uses crt;
+var
+    a,b:integer;
+    hasil:real;
+    operasi:string;
+begin
+    clrscr;
+    write('Pilihlah operasi matematika: '); readln(operasi);//penjumlahan,pengurangan,perkalian,pembagian
+    write('Masukkan nilai 1: '); readln(a);
+    write('Masukkan nilai 2: '); readln(b);
+    case operasi of
+        'penjumlahan'     :hasil:=a+b;
+        'pengurangan'     :hasil:=a-b;
+        'perkalian'       :hasil:=a*b;
+        'pembagian'       :hasil:=a/b;
+    end;
+    write(hasil:3:3);
+end.
