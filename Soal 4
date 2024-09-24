@@ -1,0 +1,19 @@
+uses crt;
+var
+    a:integer;
+    b:real;
+    c,d,e:string;
+begin
+    clrscr;
+    write('Pilihlah jenis awal konversi: '); readln(c);//Celcius,Fahrenheit,Kelvin
+    write('Pilihlah jenis akhir konversi: '); readln( d);//Celcius,Fahrenheit,Kelvin
+    write('Masukkan suhu: '); readln(a);
+    e:=c+d;
+    case e of
+        'CelciusFahrenheit':      b:=((a*9/5)+32);
+        'FahrenheitCelcius':      b:=((a-32)*5/9);
+        'CelciusKelvin':          b:=a+273;
+        'KelvinCelcius':          b:=a-273;
+    end;
+    write(b:3:1);
+end.
