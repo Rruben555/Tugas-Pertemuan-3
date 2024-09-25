@@ -11,6 +11,6 @@ begin
         writeln('Cuaca nyaman, cocok untuk jalan-jalan.')
     else if (suhu>0)then
         writeln('Cuaca dingin, pakai jaket ya!')
-    else if (suhu<0) then
+    else
        writeln('Cuaca sangat dingin jangan lupa pakai jaket tebal.');
 end.
