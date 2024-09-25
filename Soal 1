@@ -1,17 +1,17 @@
 uses crt;
 var 
-    total:integer;
+    total:longint;
     diskon:real;
 begin
     clrscr;
-    write('Masukkan harga total belanjaan: '); readln(total); //dalam ribuan
-    if (total >= 1000) then
+    write('Masukkan harga total belanjaan: '); readln(total);
+    if (total >= 1000000) then
         diskon := (0.7 * total)
-    else if (total >= 500) then
+    else if (total >= 500000) then
         diskon := (0.8 * total)
-    else if (total >= 100) then
+    else if (total >= 100000) then
         diskon := (0.9 * total)
     else
         diskon := (total);
-    write('Harga yang harus dibayar adalah: ',diskon:7:0,' ribu rupiah');
+    write('Harga yang harus dibayar adalah: ',diskon:7:0,' rupiah');
 end.
